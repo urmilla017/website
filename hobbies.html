@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="images/favi.ico">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!--        <link rel="stylesheet" type="text/css" href="home2_css.css">-->
+        <!-- <script>
+            $(document).ready(function()
+                             {
+                $(".img_logo").mouseover(function()
+                                    {
+                    $(".img_logo").attr({"src": "images/logo_initial_hover.png"});
+                });
+                $(".img_logo").mouseout(function()
+                                       {
+                    $(".img_logo").attr({"src": "images/logo_initial.png"});
+                });
+            });
+        </script> -->
+        <style type="text/css">
+            *
+            {
+                margin: 0;
+            }
+            body
+            {
+                background-size: 10px 10px;
+                background-image: linear-gradient(to right, rgb(222, 222, 222) 1px, transparent 1px), linear-gradient(to bottom, rgb(222, 222, 222) 1px, transparent 1px);
+            }
+            .row
+            {
+                background-color: black;
+                height: 120px;
+            }
+            .row1 {
+        /* border: 1px solid red; */
+        width: 50%;
+        /* margin: auto; */
+        margin-left: 30%;
+    }
+
+    .topLinks {
+        margin-top: 6%;
+    }
+            .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row8, .row9, .row10, .img_between_div
+            {
+                text-align: center;
+            }
+            .row5, .row6, .row7, .row8, .row9, .row10, .img_between_div
+            {
+                clear: both;
+            }
+            .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1
+            {
+                margin-top: 40px;
+            }
+            @font-face
+            {
+                font-family: bebasneueBold;
+                src: url("font/BebasNeue Bold.otf");
+            }
+            @font-face
+            {
+                font-family: breeSerifRegular;
+                src: url("font/BreeSerif-Regular.otf");
+            }
+            .a_menu
+            {
+                font-family: bebasneueBold;
+                font-size: 2em;
+                color: rgb(206, 205, 164);
+                text-decoration: none;
+            }
+            .a_menu:hover
+            {
+                /* text-decoration: overline; */
+                color: white;
+            }
+
+            .imageDiv {
+                position: relative;
+                margin-left: 15%;
+            }
+            
+            .img_logo
+            {
+                width: 170px;
+                height: 170px;
+                /* text-align: center; */
+/*                margin-left: 10px;*/
+                /* margin-top: 10px; */
+                position: absolute;
+            }
+/*
+            .w3-label
+            {
+                width: 300px;
+                height: 50px;
+            }
+*/
+            .row3, .img_between_div
+            {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            .row4
+            {
+                width: 40%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+/*                border: 1px solid black;*/
+            }
+            .row5
+            {
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+/*                border: 1px solid black;*/
+            }
+            .row6
+            {
+                width: 85%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            .row7
+            {
+                width: 85%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+/*                border: 1px solid black;*/
+            }
+            .row8, .row9
+            {
+                width: 85%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+/*                border: 1px solid black;*/
+            }
+            .row4_left
+            {
+                width: 90%;
+/*                float: left;*/
+/*                border: 1px solid red;*/
+            }
+            .img_book1
+            {
+                width: 175px;
+                height: 240px;
+            }
+            .img_book2
+            {
+                width: 175px;
+                height: 240px;
+/*
+            }
+            .row4_right
+            {
+                width: 49%;
+                float: right;
+*/
+/*                border: 1px solid blue;*/
+            }
+            .img_photo1
+            {
+                width: 200px;
+                height: 140px;
+            }
+            .img_photo2
+            {
+                width: 210px;
+                height: 180px;
+            }
+            .row5_left
+            {
+                width: 49%;
+                float: left;
+/*                border: 1px solid red;*/
+            }
+            .img_sketch1
+            {
+                width: 170px;
+                height: 220px;
+            }
+            .img_sketch2
+            {
+                width: 230px;
+                height: 170px;
+/*
+            }
+            .row5_right
+            {
+                margin-top: 10%;
+                width: 49%;
+                float: right;
+*/
+/*                border: 1px solid blue;*/
+            }
+
+
+
+            .p_row4_left, .p_row4_right, .p_row5_left, .p_row6_left, .p_row7_left, .p_row8_left, .p_row9_left
+            {
+                font-family: breeSerifRegular;
+                font-size: 2em;
+                text-align: center;
+            }
+            .p_row5_right
+            {
+                font-family: breeSerifRegular;
+                font-size: 1.7em;
+                color: crimson;
+            }
+#gallery {
+	width:70%;
+	margin:50px auto;
+	}
+
+#gallery a {
+	text-decoration:none;
+	}
+
+#gallery .item {
+	width: 250px;
+    height: 200px;
+    overflow: hidden;
+	float: left;
+	border: 5px solid #333;
+  background-color: white;
+	margin: 5px;
+    text-align: center;
+	}
+
+
+#gallery .item a {
+    overflow: hidden;
+	}
+
+#gallery .item a img {
+	height: 100%;
+	align-self: center;
+	}
+
+.lightbox {
+	/** Hide the lightbox */
+	display: none;
+
+	/** Apply basic lightbox styling */
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color:#333333;
+	}
+
+.lightbox:target {
+    /** Show lightbox when it is target */
+    display: block;
+    outline: none;
+}
+
+.lightbox .box {
+  	width: -webkit-min-content;
+  	width: -moz-min-content;
+  	width: min-content;
+	min-width:300px;
+/*    max-height: 100%;*/
+ 	margin: 2% auto;
+	padding:10px 20px 40px 20px;
+	background-color:#FFF;
+	box-shadow: 0px 1px 26px -3px #777777;
+	}
+
+.lightbox .title {
+	margin:0;
+	padding:0 0 10px 0px;
+	border-bottom:1px #ccc solid;
+	font-size:22px;
+	}
+
+.lightbox .content {
+	display:block;
+	position:relative;
+	}
+
+
+.lightbox .content .desc {
+	z-index:99;
+	bottom:0;
+	position:absolute;
+	padding:10px;
+	margin:0 0 4px 0;
+	background:rgba(0,0,0,0.8);
+
+	color:#fff;
+	font-size:17px;
+	opacity:0;
+	transition: opacity ease-in-out 0.5s;
+	}
+
+.lightbox .content:hover .desc	{
+	opacity:1;
+}
+
+.lightbox .next,
+.lightbox .prev,
+.lightbox .close {
+	display:block;
+	text-decoration:none;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:22px;
+	color:#858585;
+	}
+
+.prev {
+	float:left;
+	}
+
+.next, .close {
+	float:right;
+	}
+            </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="imageDiv">
+                    <img src="images/logo_initial.png" class="img_logo">
+                </div>
+                <div class="row1">
+                    <!-- <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 topLinks"></div> -->
+                    
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 topLinks">
+                        <a href="index.html" class="a_menu">ABOUT</a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 topLinks">
+                        <a href="skills.html" class="a_menu">WORK</a>
+                    </div>
+                    <!-- <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <img src="images/logo_initial.png" class="img_logo">
+                    </div> -->
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 topLinks">
+                        <a href="hobbies.html" class="a_menu">HOBBIES</a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 topLinks">
+                        <a href="scribbles.html" class="a_menu">SCRIBBLES</a>
+                    </div>
+                    <!-- <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 topLinks"></div> -->
+                </div>            
+            </div>
+            <br>
+            <br>
+            <!--body-->
+
+            <!--center picture-->
+            <!-- <div class="row1">
+                <img src="images/name1.png">
+            </div> -->
+            <!-- <br>
+            <br>
+            <div class="row2">
+                <img src="images/img_atom.png">
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <img src="images/img_celtic.png">
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <img src="images/img_atom.png">
+            </div> -->
+            <br>
+            <br>
+            <!--content-->
+            <!-- <div class="row3" id="row3_about_me">
+                <img src="images/img_hobbies.png">
+            </div> -->
+            <!-- <div class="row4">
+                <br>
+                <div class="row4_left"> -->
+                  <!--  <p class="p_row4_left">Writing</p>-->
+<!--                    <br>-->
+
+                    <!-- <section id="gallery">-->
+	<!-- thumbnail image wrapped in a link -->
+  <!--  <section class="item">
+        <a href="#img1">
+          <img src="images/book1.jpg">
+        </a>
+    </section>
+    <section class="item">
+        <a href="#img2">
+          <img src="images/book2.jpg">
+        </a>
+    </section>
+  </section>-->
+
+
+<!-- lightbox container hidden with CSS -->
+<!--<div class="lightbox" id="img1">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">My First Book</p>
+    <div class="content">
+    	<img src="images/book1-1.jpg">
+        <p class="desc">This is the story of Joseph, a college student, whose life takes a colourful turn with the entry of Vaishnavi.</p>
+    </div>
+    <a class="prev" href="#img2">Previous</a>
+    <a class="next" href="#img2">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img2">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">Second On The List</p>
+    <div class="content">
+    	<img src="images/book2.jpg">
+        <p class="desc"> Sandhya, a child in a lot of ways, is given one option. She must marry Abhimanyu. The marriage resembles a company takeover and she expects her life to be miserable. His affection wins her. However, his lack of trust brings her back from cloud nine.
+                            <br>
+Ambitious and protective, Abhimanyu, knows he must marry to help his father save face. He imagines a girl with his father's dark character and is taken aback by the gentle and caring Sandhya. The doubts in his brain dominate his better judgement and he drives her away.
+                            <br>
+Years later, a murder brings them back together. Abhimanyu must prove his innocence and his wife comes to his rescue. This time, matters more pressing than love is at stake. She learns that her whole life is one big lie and the only thing responsible is the greed for more money. Does this greed reach beyond government barriers and mining?</p>
+    </div>
+    <a class="prev" href="#img1">Previous</a>
+    <a class="next" href="#img3">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>-->
+
+
+<div class="lightbox" id="img3">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">City</p>
+    <div class="content">
+    	<img src="images/sketch1.jpg">
+        <p class="desc">Pencil Sketching</p>
+    </div>
+    <!--<a class="prev" href="#img2">Previous</a>-->
+    <a class="next" href="#img4">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+    <div class="lightbox" id="img4">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">Together</p>
+    <div class="content">
+    	<img src="images/sketch5.JPG">
+        <p class="desc">Pencil Sketching</p>
+    </div>
+    <a class="prev" href="#img3">Previous</a>
+    <a class="next" href="#img5">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+    <div class="lightbox" id="img5">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">Flower</p>
+    <div class="content">
+    	<img src="images/sketch7.JPG">
+        <p class="desc">Pencil Sketching</p>
+    </div>
+    <a class="prev" href="#img4">Previous</a>
+    <a class="next" href="#img6">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+        <div class="lightbox" id="img6">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">Dancing Couple</p>
+    <div class="content">
+    	<img src="images/sketch4.JPG">
+        <p class="desc">Pencil Sketching</p>
+    </div>
+    <a class="prev" href="#img5">Previous</a>
+    <a class="next" href="#img7">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+        <div class="lightbox" id="img7">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">Shih Tzu</p>
+    <div class="content">
+    	<img src="images/sketch6.JPG">
+        <p class="desc">Pencil Sketching</p>
+    </div>
+    <a class="prev" href="#img6">Previous</a>
+    <a class="next" href="#img8">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+    <div class="lightbox" id="img8">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">Howling Wolf</p>
+    <div class="content">
+    	<img src="images/sketch3.JPG">
+        <p class="desc">Pencil Sketching</p>
+    </div>
+    <a class="prev" href="#img7">Previous</a>
+    <!-- <a class="next" href="#nikon1">Next</a> -->
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+<div class="lightbox" id="nikon1">
+<div class="box">
+<a class="close" href="#">X</a>
+<p class="title">Black Sand Beach (Vik, Iceland)</p>
+<div class="content">
+<img src="images/nikon1.JPG">
+<p class="desc">Photography</p>
+</div>
+<a class="prev" href="#img8">Previous</a>
+<a class="next" href="#nikon2">Next</a>
+<div class="clear"></div>
+</div>
+</div>
+
+
+<div class="lightbox" id="nikon2">
+<div class="box">
+<a class="close" href="#">X</a>
+<p class="title">Ice Cave (Jökulsárlón, Iceland)</p>
+<div class="content">
+<img src="images/nikon2.JPG">
+<p class="desc">Photography</p>
+</div>
+<a class="prev" href="#nikon1">Previous</a>
+<a class="next" href="#nikon3">Next</a>
+<div class="clear"></div>
+</div>
+</div>
+
+
+<div class="lightbox" id="nikon3">
+<div class="box">
+<a class="close" href="#">X</a>
+<p class="title">Mt.Kirkjufell and Kirkjufellsfoss (Iceland)</p>
+<div class="content">
+<img src="images/nikon3.JPG">
+<p class="desc">Photography</p>
+</div>
+<a class="prev" href="#nikon2">Previous</a>
+<a class="next" href="#nikon4">Next</a>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="lightbox" id="nikon4">
+<div class="box">
+<a class="close" href="#">X</a>
+<p class="title">Iceberg (Jökulsárlón, Iceland)</p>
+<div class="content">
+<img src="images/nikon4.JPG">
+<p class="desc">Photography</p>
+</div>
+<a class="prev" href="#nikon3">Previous</a>
+<a class="next" href="#nikon5">Next</a>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="lightbox" id="nikon5">
+<div class="box">
+<a class="close" href="#">X</a>
+<p class="title">Öxarárfoss (Pingvellir National Park, Iceland)</p>
+<div class="content">
+<img src="images/nikon5.JPG">
+<p class="desc">Photography</p>
+</div>
+<a class="prev" href="#nikon4">Previous</a>
+<a class="next" href="#nikon6">Next</a>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="lightbox" id="nikon6">
+<div class="box">
+<a class="close" href="#">X</a>
+<p class="title">Hvítserkur (Iceland)</p>
+<div class="content">
+<img src="images/nikon6.JPG">
+<p class="desc">Photography</p>
+</div>
+<a class="prev" href="#nikon5">Previous</a>
+<a class="next" href="#nikon7">Next</a>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="lightbox" id="nikon7">
+<div class="box">
+<a class="close" href="#">X</a>
+<p class="title">Goðafoss (Iceland)</p>
+<div class="content">
+<img src="images/nikon7.JPG">
+<p class="desc">Photography</p>
+</div>
+<a class="prev" href="#nikon6">Previous</a>
+<a class="next" href="#nikon8">Next</a>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="lightbox" id="nikon8">
+<div class="box">
+<a class="close" href="#">X</a>
+<p class="title">Arches National Park(Utah, USA)</p>
+<div class="content">
+<img src="images/nikon8.JPG">
+<p class="desc">Photography</p>
+</div>
+<a class="prev" href="#nikon7">Previous</a>
+<a class="next" href="#nikon9">Next</a>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="lightbox" id="nikon9">
+<div class="box">
+<a class="close" href="#">X</a>
+<p class="title">Antelope Canyon (Arizona, USA)</p>
+<div class="content">
+<img src="images/nikon9.JPG">
+<p class="desc">Photography</p>
+</div>
+<a class="prev" href="#nikon8">Previous</a>
+<a class="next" href="#nikon10">Next</a>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="lightbox" id="nikon10">
+<div class="box">
+<a class="close" href="#">X</a>
+<p class="title">Grand Canyon (Arizona, USA)</p>
+<div class="content">
+<img src="images/nikon10.JPG">
+<p class="desc">Photography</p>
+</div>
+<a class="prev" href="#nikon9">Previous</a>
+<a class="next" href="#nikon11">Next</a>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="lightbox" id="nikon11">
+<div class="box">
+<a class="close" href="#">X</a>
+<p class="title">Cape Elizabeth (Maine, USA)</p>
+<div class="content">
+<img src="images/nikon11.JPG">
+<p class="desc">Photography</p>
+</div>
+<a class="prev" href="#nikon10">Previous</a>
+<a class="next" href="#nikon12">Next</a>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="lightbox" id="nikon12">
+<div class="box">
+<a class="close" href="#">X</a>
+<p class="title">Horseshoe Bend (Arizona, USA)</p>
+<div class="content">
+<img src="images/nikon12.JPG">
+<p class="desc">Photography</p>
+</div>
+<a class="prev" href="#nikon11">Previous</a>
+<a class="next" href="#nikon13">Next</a>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="lightbox" id="nikon13">
+<div class="box">
+<a class="close" href="#">X</a>
+<p class="title">Golden Gate Bridge (California, USA)</p>
+<div class="content">
+<img src="images/nikon13.JPG">
+<p class="desc">Photography</p>
+</div>
+<a class="prev" href="#nikon12">Previous</a>
+<!-- <a class="next" href="#nikon11">Next</a> -->
+<div class="clear"></div>
+</div>
+</div>
+
+</div>
+
+    <div class="lightbox" id="img38">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">Wolf</p>
+    <div class="content">
+    	<img src="images/wood1.jpg">
+        <p class="desc">Wood Burning</p>
+    </div>
+    <!-- <a class="prev" href="#img37">Previous</a> -->
+    <a class="next" href="#img39">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+        <div class="lightbox" id="img39">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">Tweety</p>
+    <div class="content">
+    	<img src="images/wood2.jpg">
+        <p class="desc">Wood Burning</p>
+    </div>
+    <a class="prev" href="#img38">Previous</a>
+    <a class="next" href="#img40">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img40">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">Piglet</p>
+    <div class="content">
+    	<img src="images/wood3.jpg">
+        <p class="desc">Wood Burning</p>
+    </div>
+    <a class="prev" href="#img39">Previous</a>
+    <!-- <a class="next" href="#img1">Next</a> -->
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="dart1">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">Autumn Maple</p>
+    <div class="content">
+    	<img src="images/dart1.PNG">
+        <p class="desc">Digital Art</p>
+    </div>
+    <!-- <a class="prev" href="#img39">Previous</a> -->
+    <a class="next" href="#dart2">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="dart2">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">Rhino</p>
+    <div class="content">
+    	<img src="images/dart2.PNG">
+        <p class="desc">Digital Art</p>
+    </div>
+    <a class="prev" href="#dart1">Previous</a>
+    <a class="next" href="#dart3">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="dart3">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">Howling Wolf</p>
+    <div class="content">
+    	<img src="images/dart3.PNG">
+        <p class="desc">Digital Art</p>
+    </div>
+    <a class="prev" href="#dart2">Previous</a>
+    <a class="next" href="#dart4">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="dart4">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">New York City Skyline</p>
+    <div class="content">
+    	<img src="images/dart4.PNG">
+        <p class="desc">Digital Art</p>
+    </div>
+    <a class="prev" href="#dart3">Previous</a>
+    <a class="next" href="#dart5">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="dart5">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">Sunset</p>
+    <div class="content">
+    	<img src="images/dart5.jpg">
+        <p class="desc">Digital Art</p>
+    </div>
+    <a class="prev" href="#dart4">Previous</a>
+    <a class="next" href="#dart6">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="dart6">
+  <div class="box">
+	<a class="close" href="#">X</a>
+    <p class="title">Sunset</p>
+    <div class="content">
+    	<img src="images/dart6.PNG">
+        <p class="desc">Digital Art</p>
+    </div>
+    <a class="prev" href="#dart5">Previous</a>
+    <!-- <a class="next" href="#dart3">Next</a> -->
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+       </div>
+
+            </div>
+
+<!-- <br>
+            <div class="img_between_div">
+                 <br>
+                <img src="images/img_atom_black.png">
+                 <br>
+            </div> -->
+          <!--  <div class="row5">
+                <br>
+                <div class="row5_left">
+                    <p class="p_row5_left">Pencil Sketching</p>
+                   <br>
+
+                    <section id="gallery">
+	 thumbnail image wrapped in a link
+    <section class="item">
+        <a href="#img3">
+          <img src="images/sketch1.jpg">
+        </a>
+    </section>
+    <section class="item">
+        <a href="#img4">
+          <img src="images/sketch5.JPG">
+        </a>
+    </section>
+        <section class="item">
+        <a href="#img5">
+          <img src="images/sketch7.JPG">
+        </a>
+    </section>
+                        <section class="item">
+        <a href="#img6">
+          <img src="images/sketch4.JPG">
+        </a>
+    </section>
+                        <section class="item">
+        <a href="#img7">
+          <img src="images/sketch6.JPG">
+        </a>
+    </section>
+                        <section class="item">
+        <a href="#img8">
+          <img src="images/sketch3.JPG">
+        </a>
+    </section>
+                    </section>
+
+            </div>-->
+            <!-- <div class="img_between_div">
+                 <br>
+                <img src="images/img_atom_black.png">
+                 <br>
+            </div>
+            <br>
+            <br> -->
+<div class="row6">
+<p class="p_row6_left">Photography</p>
+<!--                    <br>-->
+    <section id="gallery">
+<!--	 thumbnail image wrapped in a link -->
+  <section class="item">
+      <a href="#nikon1">
+        <img src="images/nikon1.JPG">
+      </a>
+  </section>
+  <section class="item">
+      <a href="#nikon2">
+        <img src="images/nikon2.JPG">
+      </a>
+  </section>
+  <section class="item">
+      <a href="#nikon3">
+        <img src="images/nikon3.JPG">
+      </a>
+  </section>
+  <section class="item">
+      <a href="#nikon4">
+        <img src="images/nikon4.JPG">
+      </a>
+  </section>
+  <section class="item">
+      <a href="#nikon5">
+        <img src="images/nikon5.JPG">
+      </a>
+  </section>
+  <section class="item">
+      <a href="#nikon6">
+        <img src="images/nikon6.JPG">
+      </a>
+  </section>
+  <section class="item">
+      <a href="#nikon7">
+        <img src="images/nikon7.JPG">
+      </a>
+  </section>
+  <section class="item">
+      <a href="#nikon8">
+        <img src="images/nikon8.JPG">
+      </a>
+  </section>
+  <section class="item">
+      <a href="#nikon9">
+        <img src="images/nikon9.JPG">
+      </a>
+  </section>
+  <section class="item">
+      <a href="#nikon10">
+        <img src="images/nikon10.JPG">
+      </a>
+  </section>
+  <section class="item">
+      <a href="#nikon11">
+        <img src="images/nikon11.JPG">
+      </a>
+  </section>
+  <section class="item">
+      <a href="#nikon12">
+        <img src="images/nikon12.JPG">
+      </a>
+  </section>
+  <section class="item">
+      <a href="#nikon13">
+        <img src="images/nikon13.JPG">
+      </a>
+  </section>
+</section>
+
+
+            </div>
+            <br>
+            <br>
+            <!-- <div class="img_between_div">
+                 <br>
+                <img src="images/img_atom_black.png">
+                 <br>
+            </div> -->
+<!--
+            <div class="row7">
+    <br>
+<p class="p_row7_left">Pastel Painting</p>
+                    <br>
+    <section id="gallery">
+
+    <section class="item">
+        <a href="#img36">
+          <img src="images/pastel1.JPG">
+        </a>
+    </section>
+    <section class="item">
+        <a href="#img37">
+          <img src="images/pastel2.JPG">
+        </a>
+    </section>
+                    </section>
+
+
+            </div> -->
+
+            <div class="row7">
+              <br>
+              <p class="p_row7_left">Pencil Sketching</p>
+              <section id="gallery">
+<section class="item">
+  <a href="#img3">
+    <img src="images/sketch1.jpg">
+  </a>
+</section>
+<section class="item">
+  <a href="#img4">
+    <img src="images/sketch5.JPG">
+  </a>
+</section>
+  <section class="item">
+  <a href="#img5">
+    <img src="images/sketch7.JPG">
+  </a>
+</section>
+                  <section class="item">
+  <a href="#img6">
+    <img src="images/sketch4.JPG">
+  </a>
+</section>
+                  <section class="item">
+  <a href="#img7">
+    <img src="images/sketch6.JPG">
+  </a>
+</section>
+                  <section class="item">
+  <a href="#img8">
+    <img src="images/sketch3.JPG">
+  </a>
+</section>
+              </section>
+            </div>
+             <br>
+             <br>
+            <!-- <div class="img_between_div">
+                 <br>
+                <img src="images/img_atom_black.png">
+                 <br>
+            </div> -->
+
+        <div class="row8">
+    <br>
+<p class="p_row8_left">Pyrography</p>
+<!--                    <br>-->
+    <section id="gallery">
+<!--	 thumbnail image wrapped in a link -->
+    <section class="item">
+        <a href="#img38">
+          <img src="images/wood1.jpg">
+        </a>
+    </section>
+    <section class="item">
+        <a href="#img39">
+          <img src="images/wood2.jpg">
+        </a>
+    </section>
+        <section class="item">
+        <a href="#img40">
+          <img src="images/wood3.jpg">
+        </a>
+    </section>
+                    </section>
+            </div>
+
+             <br>
+             <br>
+            <!-- <div class="img_between_div">
+                 <br>
+                <img src="images/img_atom_black.png">
+                 <br>
+            </div> -->
+
+
+            <div class="row9">
+        <br>
+    <p class="p_row9_left">Digital Art</p>
+    <!--                    <br>-->
+        <section id="gallery">
+    <!--	 thumbnail image wrapped in a link -->
+        <section class="item">
+            <a href="#dart1">
+              <img src="images/dart1.PNG">
+            </a>
+        </section>
+        <section class="item">
+            <a href="#dart2">
+              <img src="images/dart2.PNG">
+            </a>
+        </section>
+            <section class="item">
+              <a href="#dart3">
+                <img src="images/dart3.PNG">
+              </a>
+            </section>
+            <section class="item">
+              <a href="#dart4">
+                <img src="images/dart4.PNG">
+              </a>
+            </section>
+            <section class="item">
+              <a href="#dart5">
+                <img src="images/dart5.jpg">
+              </a>
+            </section>
+            <section class="item">
+              <a href="#dart6">
+                <img src="images/dart6.PNG">
+              </a>
+            </section>
+                        </section>
+                </div>
+                <br>
+                <br>
+               <!-- <div class="img_between_div">
+                    <br>
+                   <img src="images/img_atom_black.png">
+                    <br>
+               </div> -->
+
+<!--
+                        This Page Is
+                        <br>
+                        Under Construction...
+                        <br>
+                        More Yet To Come...
+                    </p>
+-->
+<!--                </div>-->
+
+
+            <br>
+            <div class="row10">
+                <br>
+                Copyright &copy; 2019 Urmilla Kannuswamy
+                <br>
+                <span id="siteseal">
+                  <script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=lw7mS8FzPuEbyK29YWJV3dbZQzsVbjKrqEOpXLigHJiDQb7q5EOJpKuf9BP6">
+                  </script>
+                </span>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="images/favi.ico" />
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!--        <link rel="stylesheet" type="text/css" href="home2_css.css">-->
+        <script>
+            $(document).ready(function()
+                             {
+                // $(".img_logo").mouseover(function()
+                //                     {
+                //     $(".img_logo").attr({"src": "images/logo_initial_hover.png"});
+                // });
+                // $(".img_logo").mouseout(function()
+                //                        {
+                //     $(".img_logo").attr({"src": "images/logo_initial.png"});
+                // });
+//                $(".a_progress").click(function()
+                $(".text_skew_1").mousemove(function()
+                                      {
+                    $(".progress_bar1").animate({"width":"95%"}, 3000, "swing");
+                    $(".progress_bar2").animate({"width":"90%"}, 3000, "swing");
+                    $(".progress_bar3").animate({"width":"80%"}, 3000, "swing");
+                    $(".progress_bar4").animate({"width":"80%"}, 3000, "swing");
+                    $(".progress_bar5").animate({"width":"50%"}, 3000, "swing");
+                    $(".progress_bar6").animate({"width":"73%"}, 3000, "swing");
+                    $(".progress_bar7").animate({"width":"65%"}, 3000, "swing");
+                    $(".progress_bar8").animate({"width":"70%"}, 3000, "swing");
+                    $(".progress_bar9").animate({"width":"85%"}, 3000, "swing");
+                    $(".progress_bar10").animate({"width":"40%"}, 3000, "swing");
+                    $(".progress_bar11").animate({"width":"25%"}, 3000, "swing");
+                    $(".progress_bar12").animate({"width":"84%"}, 3000, "swing");
+                });
+
+//                $(".text_skew_2").mouseover(function()
+//                                           {
+//                    $(".progress_bar7").animate({"width":"30%"}, 3000, "swing");
+//                    $(".progress_bar8").animate({"width":"20%"}, 3000, "swing");
+//                });
+            });
+        </script>
+        <style type="text/css">
+            *
+            {
+                margin: 0;
+            }
+            body
+            {
+                background-size: 10px 10px;
+                background-image: linear-gradient(to right, rgb(222, 222, 222) 1px, transparent 1px), linear-gradient(to bottom, rgb(222, 222, 222) 1px, transparent 1px);
+            }
+            .row
+            {
+                background-color: black;
+                height: 120px;
+            }
+            .row1, .row2, .row5, .row6, .row7, .img_between_div
+            {
+                text-align: center;
+            }
+
+            @font-face
+            {
+                font-family: breeSerifRegular;
+                src: url('./font/BreeSerif-Regular.otf');
+            }    
+
+            .row2 {
+                font-family: breeSerifRegular;
+                font-size: 2em;
+                text-align: center;
+            }
+
+            .row1 {
+        /* border: 1px solid red; */
+        width: 50%;
+        /* margin: auto; */
+        margin-left: 30%;
+    }
+    /* .imageLogo {
+        margin-left: -5%; 
+    } */
+
+    .topLinks {
+        margin-top: 6%;
+    }
+    /* .aboutLink {
+        margin-left: 5%;
+    } */
+            /* .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1
+            {
+                margin-top: 40px;
+            } */
+            @font-face
+            {
+                font-family: bebasneueBold;
+                src: url("font/BebasNeue Bold.otf");
+            }
+            @font-face
+            {
+                font-family: KaushanScript;
+                src: url("font/KaushanScript-Regular.otf");
+            }
+            @font-face
+            {
+                font-family: amaranthBold;
+                src: url("font/Amaranth-Bold.otf");
+            }
+            @font-face
+            {
+                font-family: arvoRegular;
+                src: url("font/Arvo-Regular.ttf");
+            }
+            .a_menu
+            {
+                font-family: bebasneueBold;
+                font-size: 2em;
+                color: rgb(206, 205, 164);
+                text-decoration: none;
+            }
+            .a_menu:hover
+            {
+                /* text-decoration: overline; */
+                color: white;
+            }
+            .imageDiv {
+        position: relative;
+        margin-left: 15%;
+    }
+    .img_logo
+    {
+        width: 170px;
+        height: 170px;
+        /* position: relative; */
+
+        /* text-align: center; */
+/*                margin-left: 10px;*/
+        /* margin-top: 10px; */
+        position: absolute;
+    }
+/*
+            .w3-label
+            {
+                width: 300px;
+                height: 50px;
+            }
+*/
+            .row3, .row4, .row5, .row6, .row7, .img_between_div
+            {
+                width: 65%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .row4_left
+            {
+                width: 38%;
+                height: 100%;
+                float: left;
+/*                border: 1px solid blue;*/
+            }
+            .row4_right
+            {
+                width: 60%;
+/*                height: 400px;*/
+                float: right;
+/*                border: 1px solid red;*/
+            }
+            .row4_right_text1
+            {
+/*                padding-right: 190px;*/
+                padding-right: 30%;
+            }
+            .row4_right_text2
+            {
+/*                padding-right: 190px;*/
+                padding-right: 30%;
+            }
+            .text_skew_1
+            {
+                /* position: relative;
+                -webkit-transform: rotate(-35deg) skew(-10deg, 0);
+                -moz-transform: rotate(-35deg) skew(-10deg, 0);
+                -ms-transform: rotate(-35deg) skew(-10deg, 0);
+                -o-transform: rotate(-35deg) skew(-10deg, 0);
+                transform: rotate(-35deg) skew(-10deg, 0);
+                text-shadow: 5px 5px red;
+                cursor: pointer; */
+            }
+            .span_row4_left
+            {
+                font-family: amaranthBold;
+                font-size: 1.2em;
+                color: grey;
+/*                padding-top: 50px;*/
+/*                padding-right: 10%;*/
+            }
+            .span_progress
+            {
+                font-family: KaushanScript;
+                font-weight: bold;
+                font-style: none;
+                font-size: 1.5em;
+                position: absolute;
+                padding: 9px;
+            }
+            .progresss {
+              width: 100%;
+              height: 50px;
+              /* background: rgba(255, 220, 220, 0.7); */
+              padding-bottom: 5px;
+              margin: 10px 0;
+            }
+            .progress1
+            {
+                width: 100%;
+                height: 50px;
+                background: rgba(255, 220, 220, 0.7);
+                padding-bottom: 5px;
+                margin: 10px 0;
+            }
+            .progress_bar1
+            {
+                height: 50px;
+                width: 0%;
+                background: red;
+            }
+            .progress2
+            {
+                width: 100%;
+                height: 50px;
+                background: rgba(255, 255, 191, 0.7);
+                padding-bottom: 5px;
+                margin: 10px 0;
+            }
+            .progress_bar2
+            {
+                height: 50px;
+                width: 0%;
+                background: yellow;
+            }
+            .progress3
+            {
+                width: 100%;
+                height: 50px;
+                background: rgba(220, 255, 220, 0.7);
+                padding-bottom: 5px;
+                margin: 10px 0;
+            }
+            .progress_bar3
+            {
+                height: 50px;
+                width: 0%;
+                background: green;
+            }
+            .progress4
+            {
+                width: 100%;
+                height: 50px;
+                background: rgba(250, 197, 165, 0.7);
+                padding-bottom: 5px;
+                margin: 10px 0;
+            }
+            .progress_bar4
+            {
+                height: 50px;
+                width: 0%;
+                background: rgb(241, 117, 41);
+            }
+            .progress5
+            {
+                width: 100%;
+                height: 50px;
+                background: rgba(214, 209, 216, 0.7);
+                padding-bottom: 5px;
+                margin: 10px 0;
+            }
+            .progress_bar5
+            {
+                height: 50px;
+                width: 0%;
+                background: grey;
+            }
+            .progress6
+            {
+                width: 100%;
+                height: 50px;
+                background: rgba(203, 181, 244, 0.7);
+                padding-bottom: 5px;
+                margin: 10px 0;
+            }
+            .progress_bar6
+            {
+                height: 50px;
+                width: 0%;
+                background: darkviolet;
+            }
+            .row5_left
+            {
+                width: 38%;
+                height: 100%;
+                float: left;
+/*                border: 1px solid blue;*/
+            }
+            .row5_right
+            {
+                width: 60%;
+/*                height: 400px;*/
+                float: right;
+/*                border: 1px solid red;*/
+            }
+            .text_skew_2
+            {
+                position: relative;
+                -webkit-transform: rotate(-35deg) skew(-10deg, 0);
+                -moz-transform: rotate(-35deg) skew(-10deg, 0);
+                -ms-transform: rotate(-35deg) skew(-10deg, 0);
+                -o-transform: rotate(-35deg) skew(-10deg, 0);
+                transform: rotate(-35deg) skew(-10deg, 0);
+                text-shadow: 5px 5px blue;
+            }
+            .span_row5_left
+            {
+                font-family: amaranthBold;
+                font-size: 1.5em;
+                color: grey;
+/*                padding-top: 50px;*/
+/*                padding-right: 10%;*/
+            }
+            .progress7
+            {
+                width: 100%;
+                height: 50px;
+                background: rgba(238, 255, 242, 0.7);
+                padding-bottom: 5px;
+                margin: 10px 0;
+            }
+            .progress_bar7
+            {
+                height: 50px;
+                width: 0%;
+                background: palegreen;
+            }
+            .progress8
+            {
+                width: 100%;
+                height: 50px;
+                background: rgba(249, 176, 253, 0.7);
+                padding-bottom: 5px;
+                margin: 10px 0;
+            }
+            .progress_bar8
+            {
+                height: 50px;
+                width: 0%;
+                background: rgb(237, 37, 248);
+            }
+            .progress9
+            {
+                width: 100%;
+                height: 50px;
+                background: rgba(249, 176, 253, 0.7);
+                padding-bottom: 5px;
+                margin: 10px 0;
+            }
+            .progress_bar9
+            {
+                height: 50px;
+                width: 0%;
+                background: rgb(237, 37, 248);
+            }
+            .progress10
+            {
+                width: 100%;
+                height: 50px;
+                background: rgba(49, 69, 251, 0.5);
+                padding-bottom: 5px;
+                margin: 10px 0;
+            }
+            .progress_bar10
+            {
+                height: 50px;
+                width: 0%;
+                background: rgb(49, 69, 251);
+            }
+            .progress11
+            {
+                width: 100%;
+                height: 50px;
+                background: rgba(255, 117, 120, 0.7);
+                padding-bottom: 5px;
+                margin: 10px 0;
+            }
+            .progress_bar11
+            {
+                height: 50px;
+                width: 0%;
+                background: rgb(255, 117, 120);
+            }
+            .progress12
+            {
+                width: 100%;
+                height: 50px;
+                background: rgba(66, 188, 247, 0.5);
+                padding-bottom: 5px;
+                margin: 10px 0;
+            }
+            .progress_bar12
+            {
+                height: 50px;
+                width: 0%;
+                background: rgb(66, 188, 247);
+            }
+            .row6_left
+            {
+                width: 38%;
+                height: 100%;
+                float: left;
+/*                border: 1px solid blue;*/
+            }
+            .row6_right
+            {
+                width: 60%;
+/*                height: 400px;*/
+                float: right;
+/*                border: 1px solid red;*/
+            }
+            .text_skew_3
+            {
+                /* position: relative;
+                -webkit-transform: rotate(-35deg) skew(-10deg, 0);
+                -moz-transform: rotate(-35deg) skew(-10deg, 0);
+                -ms-transform: rotate(-35deg) skew(-10deg, 0);
+                -o-transform: rotate(-35deg) skew(-10deg, 0);
+                transform: rotate(-35deg) skew(-10deg, 0);
+                text-shadow: 5px 5px palegreen; */
+            }
+             .span_row6_left
+            {
+                font-family: amaranthBold;
+                font-size: 1.2em;
+                color: grey;
+/*                padding-top: 50px;*/
+/*                padding-right: 10%;*/
+            }
+            .p_row6_heading
+            {
+                font-weight: bold;
+                font-size: 1.3em;
+                color: blueviolet;
+            }
+            .p_row6_text
+            {
+                font-size: 1.2em;
+                font-family: arvoRegular;
+            }
+            .row5, .row6, .row7, .img_between_div
+            {
+                clear: both;
+            }
+
+            .span_edu
+            {
+        /*
+                width: 300px;
+                height: 50px;
+        */
+                text-align: center;
+                font-size: 1.8em;
+                /* background-color: red; */
+                color: black;
+                border-radius: 4px;
+        /*                text-align: left;*/
+        /*                border: 2px solid blue;*/
+            }
+            .span_about
+    {
+        font-size: 1.3em;
+        text-align: left;
+    }
+    .row5_desc {
+        clear: both;
+    }
+    .p_row5_desc
+            {
+                text-align: center;
+                font-size: 1.5em;
+                font-family: agency fb;
+            }
+            .stencil_project_img
+            {
+              width: 200px;
+              height: 320px;
+              border: 2px solid rgba(0, 0, 0);
+            }
+            .p_row4{
+                text-align: center;
+                font-size: 2em;
+                font-family: agency fb;
+            }
+
+            .web_project_img {
+              width: 270px;
+              height: 250px;
+            }
+
+            .span_about
+    {
+        font-size: 1.3em;
+        text-align: left;
+    }
+            </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="imageDiv">
+                    <img src="images/logo_initial.png" class="img_logo">
+                </div>
+                <div class="row1">
+                    <!-- <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 topLinks"></div> -->
+                    
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 topLinks">
+                        <a href="index.html" class="a_menu">ABOUT</a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 topLinks">
+                        <a href="skills.html" class="a_menu">WORK</a>
+                    </div>
+                    <!-- <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <img src="images/logo_initial.png" class="img_logo">
+                    </div> -->
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 topLinks">
+                        <a href="hobbies.html" class="a_menu">HOBBIES</a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 topLinks">
+                        <a href="scribbles.html" class="a_menu">SCRIBBLES</a>
+                    </div>
+                    <!-- <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 topLinks"></div> -->
+                </div>
+            </div>
+            <br>
+            <br>
+            <!--body-->
+
+            <!--center picture-->
+            <!-- <div class="row1">
+                <img src="images/name1.png">
+            </div> -->
+            <br>
+            <br>
+            <div class="row2">
+                Work
+                <!-- <img src="images/img_atom.png">
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <img src="images/img_celtic.png">
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <img src="images/img_atom.png"> -->
+            </div>
+            <br>
+            <br>
+            <!--content-->
+            <div class="row3">
+                <!-- <img src="images/img_skills.png"> -->
+                <a class="span_about" href="files/Urmilla_Kannuswamy_Resume.pdf" download>Click here to download my Resume</a>
+
+                <br>
+                <br>
+                <span class="span_edu">
+                    Experience
+                 </span>
+   
+                 <br><br>
+                 <p>
+                   <span class="span_about">
+                     <b>Studio Kurbos, Stuttgart, Germany (2019-2020)
+                     <br><br>
+                     Software Developer</b>
+                     <br>
+                     - Integrated Mapbox with Vue.js to build a web application
+                     <br>
+                     - Built an offline application with Electron
+                     <br>
+                     -	Built an app with Vue.js and Quasar
+                     <br>
+                   </span>
+                 </p>
+   
+                 <br><br>
+                 <p>
+                   <span class="span_about">
+                     <b>Partners Connected Health, Boston, United States (2016-2018)
+                     <br><br>
+                     Programmer Analyst</b>
+                     <br>
+                     - Built responsive websites that integrated with mobile applications and medical devices
+                     <br>
+                     - Developed Android and iOS mobile applications
+                     <br>
+                     - Consulted with external organization to test multiple web portals on handling hundreds of users
+                     <br>
+                     - Followed agile methodology with bi-weekly sprint planning and reviews
+                     <br>
+                     <br>
+                   </span>
+                 </p>
+
+                 <br>
+              <br>
+              <span class="span_edu">
+                 Certification and Award
+              </span>
+              <br><br>
+              <p>
+                <span class="span_about">
+                  <b>ISTQB</b> - Internation Software Testing Qualifications Board
+                  <br>
+                  Foundation Level Tester
+                </span>
+              </p>
+              <br><br>
+              <p>
+                <span class="span_about">
+                  <b>iCHIC</b> - Internal Connected Health Innovation Challenge
+                  <br>
+                  First Place for 'Memoria'
+                  <br>
+                  An Amazon Echo based smart monitoring system for Dementia/Alzheimer's patients and their
+                  caregivers concerning patient mood, medication, meal adherence, location and well-being.
+                </span>
+              </p>
+            </div>
+            <br>
+            <br>
+
+            <div class="row4">
+                <span class="span_edu">
+                    A few projects
+                 </span>
+                <p class="p_row4">Stencil</p>
+                <img src="images/Stencil1.png" class="stencil_project_img">
+                <img src="images/Stencil2.png" class="stencil_project_img">
+                <img src="images/Stencil3.png" class="stencil_project_img">
+                <img src="images/Stencil4.png" class="stencil_project_img">
+                <div class="row5_desc">
+                    <p class="p_row5_desc">
+                        <br>
+                        An iOS and Android app built using React Native
+                        <br>
+                        A data collection app that lets users fill in recurring surveys for a research study that is integrated with REDCap
+                        <br>
+                        Implemented REDCap features like branching and repeating surveys
+                        <br>
+                        Designed and implemented a Node.js middleware to exist between the mobile app and REDCap for further increase in security
+                        <br>
+                        Leveraged and customized PM2 for error logging
+                        <br>
+                        Worked with the product manager on feature testing
+                        <br>
+                        Followed better coding and styling standards according to current industrial guidelines
+                    </p>
+                </div>
+
+                <br>
+                <br>
+                <p class="p_row4">SleepyTime</p>
+                <img src="images/Sleep1.png" class="stencil_project_img">
+                <img src="images/Sleep2.png" class="stencil_project_img">
+                <img src="images/Sleep3.png" class="stencil_project_img">
+                <img src="images/Sleep4.png" class="stencil_project_img">
+                <div class="row5_desc">
+                    <p class="p_row5_desc">
+                        <br>
+                        An iOS app built using React Native
+                        <br>
+                        The app researches a process that helps parents with their child’s sleep training
+                        <br>
+                        Implemented local push notifications, routing and a drag and drop feature that works similar to the iOS drag and drop
+                    </p>
+                </div>
+
+                <br>
+                <br>
+
+                <p class="p_row4">PSA Hook</p>
+                <!--<img src="images/Sleep1.png" class="stencil_project_img">-->
+                <div class="row5_desc">
+                    <p class="p_row5_desc">
+                        <br>
+                        REDCap Hook built with JavaScript and PHP
+                        <br>
+                        A JavaScript based hook that leverages the existing PHP codebase to minimize human error
+                        <br>
+                        Makes a call to the FHIR database and auto populates the fields based on the entered information
+                    </p>
+                </div>
+
+                <br>
+                <br>
+
+                <p class="p_row4">Web Portal</p>
+                <img src="images/bdt1.png" class="web_project_img">
+                <img src="images/bdt3.png" class="web_project_img">
+                <img src="images/bdt4.png" class="web_project_img">
+                <!--<img src="images/Stencil4.png" class="web_project_img">-->
+                <!--<img src="images/Sleep1.png" class="stencil_project_img">-->
+                <div class="row5_desc">
+                    <p class="p_row5_desc">
+                        <br>
+                        A responsive web portal built with Twitter Bootstrap, HTML, JavaScript and Node with IE compatibility
+                        <br>
+                        An IE compatible web portal that helps users manage their diabetes that integrates with medical devices and a mobile application
+                        <br>
+                        Collaborated with an external team for the development and testing phase
+                        <br>
+                        Used D3.js library to generate data visualizations
+                        <br>
+                        Used Google Analytics to track the portal data
+                    </p>
+                </div>
+
+
+
+
+            </div>
+
+
+            <br>
+            <br>
+            <!-- <div class="row6">
+                <div class="row6_left">
+                    <br>
+                    <br>
+                    <h1 class="text_skew_3">
+                        <span class="span_row6_left">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            Technical
+                        </span>
+                    </h1>
+                </div>
+                <div class="row6_right">
+                    <br>
+                    <br>
+                    <p class="p_row6_heading">
+                        Languages
+                    </p>
+                    <p class="p_row6_text">
+                      HTML, CSS, Javascript, Bootstrap, D3JS
+                    </p>
+                    <p class="p_row6_heading">
+                        Frameworks
+                    </p>
+                    <p class="p_row6_text">
+                        React.js, Vue.js
+                    </p>
+                    <p class="p_row6_heading">
+                        Mobile Development
+                    </p>
+                    <p class="p_row6_text">
+                        React Native
+                    </p>
+                    <p class="p_row6_heading">
+                        Server Environment
+                    </p>
+                    <p class="p_row6_text">
+                        Node.js
+                    </p>
+                    <p class="p_row6_heading">
+                        Mapping Platform
+                    </p>
+                    <p class="p_row6_text">
+                        Mapbox
+                    </p>
+                    <p class="p_row6_heading">
+                        Others
+                    </p>
+                    <p class="p_row6_text">
+                        Swift, Python
+                    </p>
+                </div>
+            </div> -->
+            <div class="img_between_div">
+                <br>
+                <!-- <img src="images/img_atom_black.png"> -->
+                <br>
+            </div>
+<!--
+            <div class="row5">
+                <div class="row5_left">
+                    <br>
+                    <br>
+                    <h1 class="text_skew_2">
+                        <span class="span_row5_left">
+                            Languages
+                        </span>
+                    </h1>
+                </div>
+                <div class="row5_right">
+                    <br>
+                    <br>
+                    <div class="progress">
+                        <div class="progress_bar progress_bar7">
+                            <span class="span_progress">
+                                Java
+                            </span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress_bar progress_bar8">
+                            <span class="span_progress">
+                                C/C++
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="img_between_div">
+                 <br>
+                <img src="img_atom_black.png">
+                 <br>
+            </div>
+-->
+            <!-- <div class="row6">
+                <div class="row6_left">
+                    <br>
+                    <br>
+                    <h1 class="text_skew_3">
+                        <span class="span_row6_left">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            Other Skills
+                        </span>
+                    </h1>
+                </div>
+                <div class="row6_right">
+                    <br>
+                    <br>
+                    <p class="p_row6_heading">
+                        Development Tools
+                    </p>
+                    <p class="p_row6_text">
+                      Xcode, Android Studio, Atom, Appcelerator Studio, Eclipse
+                    </p>
+                    <p class="p_row6_heading">
+                        Prototyping
+                    </p>
+                    <p class="p_row6_text">
+                        Ninjamock, Invision
+                    </p>
+                    <p class="p_row6_heading">
+                        Testing
+                    </p>
+                    <p class="p_row6_text">
+                        Selenium, Mocha, Jest, JMeter, Blazemeter
+                    </p>
+                    <p class="p_row6_heading">
+                        Data Capture Application
+                    </p>
+                    <p class="p_row6_text">
+                        REDCap(HIPAA compliant)
+                    </p>
+                    <p class="p_row6_heading">
+                        Project and Bug Tracking
+                    </p>
+                    <p class="p_row6_text">
+                        JIRA, Confluence
+                    </p>
+                    <p class="p_row6_heading">
+                        Voice Assistant
+                    </p>
+                    <p class="p_row6_text">
+                        Amazon Alexa
+                    </p>
+                    <p class="p_row6_heading">
+                        Error Tracking
+                    </p>
+                    <p class="p_row6_text">
+                        Raygun
+                    </p>
+                    <p class="p_row6_heading">
+                        Analytics
+                    </p>
+                    <p class="p_row6_text">
+                        Google Analytics
+                    </p>
+                    <p class="p_row6_heading">
+                        Operating Systems
+                    </p>
+                    <p class="p_row6_text">
+                        iOS, Android, Windows, OS X
+                    </p>
+                </div>
+            </div> -->
+            <div class="row7">
+                <br>
+                Copyright &copy; 2019 Urmilla Kannuswamy
+                <br>
+                <span id="siteseal">
+                  <script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=lw7mS8FzPuEbyK29YWJV3dbZQzsVbjKrqEOpXLigHJiDQb7q5EOJpKuf9BP6">
+                  </script>
+                </span>
+            </div>
+        </div>
+    </body>
+</html>
